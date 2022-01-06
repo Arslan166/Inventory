@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}About{% endblock title %}
+
+
+{% block body %}
+<center>
+{% comment %} <div class="container py-3">
+	<h2>Products</h2>
+	<hr>
+	<br>
+	<div class="row">
+		{% for p in Product %}
+		<div class="col-sm-12 col-md-6 col-lg-3 pb-4">
+			<div class="card h-100" style="border:none">
+			  	<div class="card-body">
+					<h5 class="card-title">{{ p.product_name }}</h5>
+				  	<p class="card-text text-muted" style="font-size:12px">{{ p.product_type }}</p>
+				  	<p class="card-text">{{ p.product_description }}</p>
+			  	</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div> {% endcomment %}
+<hr>
+{% comment %} {% endcomment %}
+
+</center>
+{% endblock body %}

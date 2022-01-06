@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block title %}order_form{% endblock title %}
+
+
+{% block body %}
+<div class="col-md-2 my-2 p-2">
+<a href="{% url 'ndetails' %}" class="btn btn-xs btn-dark">Back</a><p><b>To Details</b></p>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<div class="card card-body">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    
+    <input type="submit" name="Submit">
+</form>
+</div>
+</div>
+</div>
+
+{% endblock body %}
